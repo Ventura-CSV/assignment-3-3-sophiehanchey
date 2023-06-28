@@ -82,6 +82,6 @@ def test_main_4():
 
     # regex_string = r'[\w,\W]*' + str(minval) + r'[\w,\W]*'
     # res = re.search(regex_string, lines[0])
-    res = re.search(r'[\w,\W]*[f,F]alse[\w,\W]*', lines[0])
+    # res = re.search(r'[\w,\W]*[f,F]alse[\w,\W]*', lines[0])
     # assert res != None
     # print(res.group())
