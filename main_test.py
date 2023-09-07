@@ -7,7 +7,7 @@ import re
 def test_main_1():
     captureOut = io.StringIO()
     sys.stdout = captureOut
-    datastr = 'john@company.com'
+    datastr = 'john123@company.com'
     sys.stdin = io.StringIO(datastr)
 
     ret = main.main()
