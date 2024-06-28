@@ -2,23 +2,24 @@ def main():
     email = input('Enter your email: ')
     length = len(email)
     firstChar = email[0]
+    result = True
     
     if length<5 or length>30:
-        return False
+        result = False
     
-    if not firstChar.isalpha:
-        return False
+    if not firstChar.isalpha():
+        result = False
     
     if '@' not in email:
-        return False
+        result = False
     else: 
         atId = email.find('@')
         postAt = email[atId:]
         
     if '.' not in postAt:
-        return False   
+        result = False
         
-    result = True
+    print(result)   
 
     ########################################
     # Do not delete the return statement
@@ -27,4 +28,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    main()
